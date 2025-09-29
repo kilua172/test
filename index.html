@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по информатике. Иванов Иван. ИС 3.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .task {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        
+        .variant {
+            padding-left: 20px;
+        }
+        
+        .answer {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        #score {
+            font-weight: bold;
+            color: #27ae60;
+            margin-left: 10px;
+        }
+        
+        .correct {
+            border: 2px solid #27ae60 !important;
+        }
+        
+        .incorrect {
+            border: 2px solid #e74c3c !important;
+        }
+        
+        .developers {
+            margin-top: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест по информатике</h1>
+    
+    <table id="q1">
+        <tr>
+            <td rowspan="3">1</td>
+            <td colspan="4" class="task">
+                Автоматическое устройство осуществило перекодировку информационного сообщения на русском языке,
+                первоначально записанного в 16-битном коде Unicode, в 8-битную кодировку КОИ-8. При этом информационное
+                сообщение уменьшилось на 480 бит. Какова длина сообщения в символах?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 30</td>
+            <td class="variant">2) 60</td>
+            <td class="variant">3) 120</td>
+            <td class="variant">4) 480</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a1" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+
+    <table id="q2">
+        <tr>
+            <td rowspan="3">2</td>
+            <td colspan="4" class="task">
+                Информационное сообщение объемом 450 бит состоит из 150 символов. Каков информационный вес каждого символа этого сообщения?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 5 бит</td>
+            <td class="variant">2) 30 бит</td>
+            <td class="variant">3) 3 бита</td>
+            <td class="variant">4) 3 байта</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a2" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+
+    <table id="q3">
+        <tr>
+            <td rowspan="3">3</td>
+            <td colspan="4" class="task">
+                Информационное сообщение объемом 3 Кбайта содержит 6144 символа. Сколько символов содержит алфавит, при помощи которого было записано это сообщение?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 4</td>
+            <td class="variant">2) 16</td>
+            <td class="variant">3) 8</td>
+            <td class="variant">4) 32</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a3" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+    
+    <table id="q4">
+        <tr>
+            <td rowspan="3">4</td>
+            <td colspan="4" class="task">
+                Сколько бит информации несет сообщение о том, что из колоды в 32 карты достали даму пик?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 2 бита</td>
+            <td class="variant">2) 4 бита</td>
+            <td class="variant">3) 5 бит</td>
+            <td class="variant">4) 32 бита</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a4" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+    
+    <table id="q5">
+        <tr>
+            <td rowspan="3">5</td>
+            <td colspan="4" class="task">
+                В кодировке Unicode на каждый символ отводится два байта. Определите информационный объем сообщения из 20 символов в этой кодировке.
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 20 бит</td>
+            <td class="variant">2) 80 бит</td>
+            <td class="variant">3) 160 бит</td>
+            <td class="variant">4) 320 бит</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a5" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+    
+    <table id="q6">
+        <tr>
+            <td rowspan="3">6</td>
+            <td colspan="4" class="task">
+                Сколько существует различных последовательностей из символов «плюс» и «минус», длиной ровно в пять символов?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 64</td>
+            <td class="variant">2) 50</td>
+            <td class="variant">3) 32</td>
+            <td class="variant">4) 20</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a6" type="text" class="answer" placeholder="Введите номер ответа" />
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="checkAnswers()">Проверить ответы</button>
+    <div>Правильных ответов: <span id="score">0</span> из 6</div>
+    
+    <p class="developers">
+        Разработчики: Иванов Иван, Петров Андрей
+    </p>
+
+    <script>
+        function checkAnswers() {
+            // Правильные ответы
+            const correctAnswers = {
+                'a1': '2',  // 60
+                'a2': '3',  // 3 бита
+                'a3': '3',  // 8
+                'a4': '3',  // 5 бит
+                'a5': '4',  // 320 бит
+                'a6': '3'   // 32
+            };
+            
+            let score = 0;
+            
+            // Проверяем каждый ответ
+            for (let i = 1; i <= 6; i++) {
+                const answerId = 'a' + i;
+                const questionId = 'q' + i;
+                const userAnswer = document.getElementById(answerId).value.trim();
+                const correctAnswer = correctAnswers[answerId];
+                
+                const questionElement = document.getElementById(questionId);
+                
+                if (userAnswer === correctAnswer) {
+                    questionElement.classList.remove('incorrect');
+                    questionElement.classList.add('correct');
+                    score++;
+                } else {
+                    questionElement.classList.remove('correct');
+                    questionElement.classList.add('incorrect');
+                }
+            }
+            
+            // Обновляем счет
+            document.getElementById('score').textContent = score;
+        }
+    </script>
+</body>
+</html>
